@@ -1,0 +1,61 @@
+
+body{
+    background-color:white;
+}
+.container{
+    width: 80%;
+    margin:20px auto;
+}
+.top{
+    display:flex;
+}
+.intro{
+    width: 40%;
+}    
+
+h1{
+    color:#951995; 
+     font-size: 50px;
+}
+.ratings{
+    width:60%
+}
+
+
+.rating{
+    background-color: rgb(220, 210, 215);
+    padding:15px;
+    margin:15px;
+    border-radius:8px
+
+}
+.cards{
+    display:flex;
+    gap:25px;
+    margin-top:10px;
+}
+.card{
+    
+    background-color:#502050;
+    color:white;
+    padding:10px;
+    border-radius:8px;
+}
+.card img{
+    width:30px;
+    border-radius:30px;
+    height:30px;
+}
+
+.card span{
+    color:#ee9bff;
+}
+h2{
+    font-size: 20px;
+    font-weight: bold;
+    text-align: right;
+}
+.span{
+    font-size: 12px;
+    text-align: right;
+}

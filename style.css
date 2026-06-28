@@ -1,6 +1,11 @@
-
+*{
+    margin: 5px;
+    padding:0px;
+    box-sizing:border-box;
+}
 body{
     background-color:white;
+
 }
 .container{
     width: 80%;
@@ -8,26 +13,36 @@ body{
 }
 .top{
     display:flex;
-}
+    justify-content:space-between;
+}  
 .intro{
-    width: 40%;
-}    
-
+    width:40%;
+}
 h1{
     color:#951995; 
      font-size: 50px;
 }
 .ratings{
-    width:60%
+    width:50%;
+    display:flex;
+    flex-direction:column;
+    gap:5px;
 }
 
 
 .rating{
     background-color: rgb(220, 210, 215);
-    padding:15px;
-    margin:15px;
-    border-radius:8px
+    border-radius:8px;
+    display:flex;
+    gap:10px;
+    padding:10px;
 
+}
+.rating-2{
+    align-self: center;
+}
+.rating-3{
+    align-self:flex-end;
 }
 .cards{
     display:flex;
@@ -40,6 +55,19 @@ h1{
     color:white;
     padding:10px;
     border-radius:8px;
+    flex:1;
+}
+.card-2{
+    margin-top:20px;
+
+}
+.card-3{
+    margin-top:40px;
+}
+.user-info{
+    display:flex;
+    align-items:center;
+    gap:20px;
 }
 .card img{
     width:30px;
@@ -63,41 +91,55 @@ h2{
 
 
 
-@media (max-width:950px){}
-    .container{
-        width:90%;
-        margin:40px auto;
+
+@media (max-width: 768px) {
     
-}
-.top{
-    flex-direction:column;
-    text-align:center;
-    gap:40px;
-    margin-bottom:40px;
-}
-.intro{
-    width:100%
-}
-h1{
-    font-size:36px;
-}
-.ratings{
-    width:100%;
-    align-items:center;
-}
-.rating{
-    width:100%;
-    flex-direction:column;
-    gap:10px;
-    padding:20px;
-    box-sizing:border-box;
-}
-.cards{
-    flex-direction:column;
-    height:auto;
-    gap:20px;
-    margin-top:30px;
-}.card{
-    width:100%;
-    box-sizing:border-box;
-}
+    body {
+        padding: 25px;
+    }
+    
+    .container {
+        width: 100%;
+    }
+    
+    .top {
+        flex-direction: column;
+        text-align: center;
+        gap: 40px;
+        margin-bottom: 40px;
+    }
+    
+    .intro {
+        width: 100%;
+    }
+    
+    h1 {
+        font-size: 36px;
+    }
+    
+    .ratings {
+        width: 100%;
+        align-items: center;
+    }
+    
+    .rating {
+        width: 100%;
+        flex-direction: column;
+        gap: 10px;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+    
+    .cards {
+        flex-direction: column;
+        height: auto;
+        gap: 20px;
+        margin-top: 30px;
+    }
+    
+    .card {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+} 
